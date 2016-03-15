@@ -10,7 +10,7 @@ void log_to_ide(const char * format, ...)
 	char szBuff[1024];
 	va_list arg;
 	va_start(arg, format);
-	_vsnprintf(szBuff, sizeof(szBuff), format, arg);
+	_vsnprintf_s(szBuff, sizeof(szBuff), format, arg);
 	va_end(arg);
 	OutputDebugStringA(szBuff);
 	OutputDebugStringA("\n");
