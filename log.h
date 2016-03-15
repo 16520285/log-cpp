@@ -1,5 +1,7 @@
 #pragma once
 #include <stdio.h>
+#include <string.h>
+
 /*
 * Author: sontx, www.sontx.in
 * A simple log header for debug, support log output to stderr, file, console and IDE(only win32)
