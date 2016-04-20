@@ -10,10 +10,10 @@
 
 #ifdef _DEBUG
 
-#define DEBUG_D_TAG				"DEBUG"				/* debug tag */
-#define DEBUG_E_TAG				"ERROR"				/* error tag */
-#define DEBUG_W_TAG				"WARN"				/* warning tag */
-#define DEBUG_I_TAG				"INFO"				/* info tag */
+#define DEBUG_D_TAG				"DBG"				/* debug tag */
+#define DEBUG_E_TAG				"ERR"				/* error tag */
+#define DEBUG_W_TAG				"WRN"				/* warning tag */
+#define DEBUG_I_TAG				"INF"				/* info tag */
 
 #ifdef WIN32
 #define DEBUG_OUTPUT_IDE		(1)					/* debug info will be written to visual studio ide */
@@ -21,7 +21,7 @@
 #define DEBUG_OUTPUT_STREAM		(2)					/* debug info will be written to stream(stderr) */
 #define DEBUG_OUTPUT_FILE		(3)					/* debug info will be written to file debug.log in current directory */
 #define DEBUG_OUTPUT_CON		(4)					/* debug info will be written to console with simple message */
-#define DEBUG_OUTPUT_MODE		DEBUG_OUTPUT_IDE	/* output mode */
+#define DEBUG_OUTPUT_MODE		DEBUG_OUTPUT_CON	/* output mode */
 
 #define DEBUG_FORMAT			"[%s] %20s:%10d:%25s(): "
 #define __FILENAME__			(strrchr(__FILE__, '\\') ? strrchr(__FILE__, '\\') + 1 : __FILE__)
